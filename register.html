@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <nav id="navbar">
+
+        <div id="logo">
+          <img id="gambarLogo" src="icon.png" alt="logo">
+        </div>
+
+        <div id="menus">
+          <div class="menuNavbar">
+            <br>
+            <a href="html.html">
+              Home
+            </a>
+          </div>
+
+          <div class="menuNavbar">
+            <br>
+            <div class="dropdown">
+              <button class="dropbtn">Products</button>
+              <div class="dropdown-content">
+                <a href="products.html">Healthcare</a>
+                <a href="products1.html">Cosmetic</a>
+                <a href="products2.html">Misc.</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menuNavbar">
+            <br>
+            <a href="aboutus.html">
+              About Us
+            </a>
+          </div>
+
+          <div class="menuNavbar">
+            <br>
+            <a href="register.html">
+              Register
+            </a>
+          </div>
+
+          <div class="menuNavbar">
+            <a href="login.html">
+              <button type="submit" class="login">Login</button>
+            </a>
+          </div>
+
+        </div>
+        <input type="button" id="buttonHam" value="&#9776;" onclick="show()">
+    </nav>
+    <div class="hamburger">
+      <div id="menuham">
+        <div id="menuNavbar">
+          <br>
+          <a href="html.html" class="home5">
+            Home
+          </a>
+        </div>
+
+        <div id="menuNavbar">
+          <br>
+          <div class="dropdown">
+            <button class="dropbtn1">Products</button>
+            <div class="dropdown-content">
+              <a href="products.html">Healthcare</a>
+              <a href="products1.html">Cosmetic</a>
+              <a href="products2.html">Misc.</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="menuNavbar">
+          <br>
+          <a href="aboutus.html" class="aboutus5">
+            About Us
+          </a>
+        </div>
+
+        <div id="menuNavbar">
+          <br>
+          <a href="register.html" class="register5">
+            Register
+          </a>
+        </div>
+        <br>
+        <div id="menuNavbar">
+          <a href="login.html">
+            <button type="submit" class="login1">Login</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    
+    <br>
+    <br>
+    <div id="seluruh">
+      <h2 class="register">Register</h2>
+      <br><br>
+      <form name="form1" onsubmit="return validasi()">
+        <div class="kotak">
+          <br>
+          <div class="form10">
+            <input type="text"name="nama" id="nama" placeholder="Full Name" required>
+          </div>
+          <br><br><br>
+  
+  
+          <br>
+          <div class="form10">
+            <input type="text"name="text1" id="email" placeholder="Email" required>
+          </div>
+          
+          <br><br><br>
+          
+          <div class="form10">
+            <label for="radio" class="tulisan">Gender</label>
+          </div>
+          
+          <br><br>
+
+          <div class="form10">
+            <div class="kelamin">
+            <input type="radio"name="jenis" value="Male" id="Pria" required>
+            <label for="jenis">Male</label>
+            <input type="radio"name="jenis" value="Female" id="Wanita" required>
+            <label for="jenis">Female</label>
+            <br><br><br>
+          </div>
+          </div>
+          
+          
+  
+          <div class="form10">
+            <label for="city" class="tulisan1">City</label>
+          <br><br>
+          <select name="city" id="city" required>
+              <option value="Jakarta">Jakarta</option>
+              <option value="Palembang">Palembang</option>
+              <option value="Medan">Medan</option>
+              <option value="Aceh">Aceh</option>
+              <option value="Surabaya">Surabaya</option>
+              <option value="Pontianak">Pontianak</option>
+              <option value="Balikpapan">Balikpapan</option>
+              <option value="Makassar">Makassar</option>
+          </select>
+          </div>
+          
+          <br><br>
+  
+  
+          <br>
+          <div class="form10">
+            <label for="password" class="password5">Password</label>
+            <br>
+          <input type="password" id="password" name="password" required >
+           <br> <br><br>
+           <label for="password" class="password5">Confirm Password</label>
+           <br>
+          <input type="password"name="password" id="confirmpassword" required >
+          <br><br>
+          </div>
+          
+  
+          
+          <button type="submit" class="loginan" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)">Register</button>
+        </div>
+      </form>
+    </div>
+    
+    <br>
+    <footer>
+      <div id="logo2">
+        <a href="https://twitter.com/"><img class="logo3" src="81609.png" alt="Twitter"></a>
+        <a href="https://www.facebook.com/"><img class="logo3" src="59439.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/"><img class="logo3" src="87390.png" alt="Instagram"></a>
+      </div>
+      <br>
+      <div id="copyright">
+        <h4 class="copyright1">Copyright © 2022 Mario Orlando. All Rights Reserved.</h4>
+      </div>
+    </footer>
+    <br>
+</body>
+</html>
